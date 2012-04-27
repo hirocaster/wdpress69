@@ -358,7 +358,7 @@ Full-Width Styles
   height:181px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/wdpress68.png) no-repeat bottom right;
+  background: url(../images/wdpress68.jpg) no-repeat bottom right;
   margin-left: 10px;
 }
 
@@ -371,7 +371,7 @@ Full-Width Styles
 }
 
 .wdpress_link:hover {
-  background: url(../images/wdpress68.png) no-repeat top right;
+  background: url(../images/wdpress68.jpg) no-repeat top right;
 }
 
 #main_content_wrap {
