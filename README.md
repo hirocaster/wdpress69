@@ -1,4 +1,4 @@
-# WEB+DB PRESS Voll.69 詳解GitHub
+# WEB+DB PRESS Vol.69 詳解GitHub
 
 特設サイトはこちら
 
