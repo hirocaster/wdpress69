@@ -40,7 +40,7 @@
           </section>
           <section id="mook">
             <a class="mook_link" href="http://gihyo.jp/magazine/wdpress/plus/978-4-7741-5616-3">開発ツール徹底攻略</a>
-          <section id="wdpress">
+          </section>
         </header>
     </div>
 
@@ -613,23 +613,33 @@
       </footer>
     </div>
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#impression_num").text( $("p.impression").length );
-});
-</script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // show impression count
+        $("#impression_num").text( $("p.impression").length );
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-31168931-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+        $("p.impression").each(function(){
+          // 感想の中にTwitterのリンクが含まれていない場合のみ @screen_name にリンクを貼る
+          var orig_html = $(this).html();
+          if(!orig_html.match(/https?:\/\/twitter.com\//)){
+            var replaced_html = orig_html.replace(/@([0-9a-zA-Z_]+)/, '<a href="http://twitter.com/$1">@$1</a>');
+            $(this).html(replaced_html);
+          }
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-31168931-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
 
 
   </body>
