@@ -1,6 +1,6 @@
 # WEB+DB PRESS Voll.69 詳解GitHub
 
-特設サイトはこちら
+test特設サイトはこちら
 
   [http://hirocaster.github.com/wdpress69/](http://hirocaster.github.com/wdpress69/)
 
